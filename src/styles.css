@@ -10,12 +10,12 @@ body {
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: #101010;
+  background-color: var(--body-color);
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--text-color);
 }
 
 img,
@@ -53,7 +53,114 @@ h6 {
   text-wrap: balance;
 }
 
+:root {
+  --container-color: #eaf5ff40;
+  --body-color: #3c61c0;
+  --text-color: white;
+  --text--greyed-color: #d7c9c9;
+}
+
 .container {
   display: flex;
   flex-direction: column;
+  gap: 2rem;
+}
+
+.weather-location {
+  font-size: 2.5rem;
+}
+
+.weather-date-time {
+  font-size: 2rem;
+  color: var(--text--greyed-color);
+}
+
+.weather-container {
+  background-color: var(--container-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+  padding: 5rem;
+  border-radius: 8px;
+}
+
+.weather-current {
+  display: flex;
+  align-items: center;
+}
+
+.current-temperature {
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.current-icon {
+  width: 240px;
+}
+
+.weather-summary {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.summary-heading {
+  color: var(--text--greyed-color);
+  font-size: 1.35rem;
+}
+
+.summary-feels-like {
+  color: var(--text--greyed-color);
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.summary-value {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.weather-details-container {
+  background-color: var(--container-color);
+  padding: 5rem;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-detail-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+
+.weather-detail-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  font-size: 2.5rem;
+  color: var(--text--greyed-color);
+}
+
+.weather-detail-values {
+  display: flex;
+  flex-direction: column;
+}
+
+.weather-detail-heading {
+  font-size: 1.5rem;
+  color: var(--text--greyed-color);
+}
+
+.weather-detail-value {
+  font-size: 1.375rem;
+  color: var(--text-color);
 }

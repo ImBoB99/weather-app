@@ -9,13 +9,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://atugatran.github.io/FontAwesome6Pro/css/all.min.css"
+    />
     <title>Weather App</title>
   </head>
   <body>
+    <!--
+    <input type="text" id="weather-search" name="weather-search" />
+    <button id="weather-search-button">Get Weather</button>
+    -->
     <div class="container">
-      <input type="text" id="weather-search" name="weather-search" />
-      <button id="weather-search-button">Get Weather</button>
-
       <div class="location-date-container">
         <div class="weather-location">Zagreb, Hrvatska</div>
         <div class="weather-date-time">Monday, 11 November 2024 | 21:10</div>
@@ -23,13 +28,13 @@
 
       <div class="weather-container">
         <div class="weather-current">
-          <img class="current-icon" alt="" />
+          <img class="current-icon" src="/src/images/clear-night.svg" alt="" />
           <div class="current-temperature">25&deg;C</div>
         </div>
         <div class="weather-summary">
-          <span class="summary-heading">Max</span>
+          <span class="summary-heading">Max Temp</span>
           <div class="summary-value">25&deg;C</div>
-          <span class="summary-heading">Min</span>
+          <span class="summary-heading">Min Temp</span>
           <div class="summary-value">25&deg;C</div>
           <div class="summary-feels-like">Feels like 25&deg;C</div>
         </div>
@@ -37,11 +42,46 @@
 
       <div class="weather-details-container">
         <div class="weather-detail-box">
-          <img class="weather-detail-icon" alt="" />
+          <i class="fa-solid fa-sunrise weather-detail-icon"></i>
           <div class="weather-detail-values">
             <span class="weather-detail-heading">Sunrise</span>
             <div class="weather-detail-value">06:33</div>
           </div>
+        </div>
+        <div class="weather-detail-box">
+          <i class="fa-solid fa-sunset weather-detail-icon"></i>
+          <div class="weather-detail-values">
+            <span class="weather-detail-heading">Sundown</span>
+            <div class="weather-detail-value">19:33</div>
+          </div>
+        </div>
+        <div class="weather-detail-box">
+            <i class="fa-sharp fa-solid fa-umbrella weather-detail-icon"></i>
+            <div class="weather-detail-values">
+              <span class="weather-detail-heading">Chance of Rain</span>
+              <div class="weather-detail-value">3%</div>
+            </div>
+        </div>
+        <div class="weather-detail-box">
+            <i class="fa-regular fa-droplet-percent weather-detail-icon"></i>
+            <div class="weather-detail-values">
+              <span class="weather-detail-heading">Humidity</span>
+              <div class="weather-detail-value">97%</div>
+            </div>
+        </div>
+        <div class="weather-detail-box">
+            <i class="fa-sharp fa-solid fa-wind weather-detail-icon"></i>
+            <div class="weather-detail-values">
+              <span class="weather-detail-heading">Wind</span>
+              <div class="weather-detail-value">97%</div>
+            </div>
+        </div>
+        <div class="weather-detail-box">
+            <i class="fa-solid fa-sun-bright weather-detail-icon"></i>
+            <div class="weather-detail-values">
+              <span class="weather-detail-heading">UV Index</span>
+              <div class="weather-detail-value">3</div>
+            </div>
         </div>
       </div>
     </div>
