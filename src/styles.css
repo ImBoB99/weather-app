@@ -7,10 +7,17 @@
   margin: 0;
 }
 body {
+  font-family: "Inter", sans-serif;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   background-color: #101010;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
+
 img,
 picture,
 video,
@@ -44,4 +51,9 @@ h4,
 h5,
 h6 {
   text-wrap: balance;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
 }

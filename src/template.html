@@ -1,15 +1,47 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Weather App</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="container">
+      <input type="text" id="weather-search" name="weather-search" />
+      <button id="weather-search-button">Get Weather</button>
 
-    <h1>Odin Project Weather APP</h1>
-    <input type="text" id="weather-search" name="weather-search">
-    <button id="weather-search-button">Get Weather</button>
-    
-</body>
+      <div>Zagreb, Hrvatska</div>
+      <div>Monday, 11 November 2024 | 21:10</div>
+
+      <div>
+        <div>
+          <img alt="" />
+          <div>25&deg;C</div>
+        </div>
+        <div>
+          <span>Max</span>
+          <div>25&deg;C</div>
+          <span>Min</span>
+          <div>25&deg;C</div>
+          <div>Feels like 25&deg;C</div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img alt="" />
+          <div>
+            <span>Sunrise</span>
+            <div>06:33</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

@@ -27,12 +27,14 @@ async function getData() {
 }
 
 function processData(data) {
-  const processedData = [];
-  console.log(data.days); // data for 15 days
+  const processedDataObject = {};
+  processedDataObject.processedData = [];
+  console.log(data); // data for 15 days
+  processedDataObject.resolvedAdress = data.resolvedAddress;
   data.days.forEach((day) => {
-    processedData.push(filterDayObject(day));
+    processedDataObject.processedData.push(filterDayObject(day));
   });
-  console.log(processedData); // processed (filtered) data
+  console.log(processedDataObject); // processed (filtered) data
 }
 
 function filterDayObject(dayObject) {
