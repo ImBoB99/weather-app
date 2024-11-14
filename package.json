@@ -29,7 +29,6 @@
     "webpack-merge": "^6.0.1"
   },
   "dependencies": {
-    "all-the-cities": "^3.1.0",
     "date-fns": "^4.1.0"
   }
 }

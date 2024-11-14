@@ -23,6 +23,8 @@ function displayLoader() {
   Object.values(domElements).forEach((item) => {
     if (item) {
       // Check if the element exists in the DOM
+      // remove old data if re-run
+      item.innerHTML = "";
       item.append(span.cloneNode(true)); // Clone span for each element to avoid moving the same span
     }
   });
