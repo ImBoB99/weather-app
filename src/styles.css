@@ -173,6 +173,7 @@ h6 {
 }
 
 .search-form {
+  position: relative;
   width: 100%;
   max-width: 500px;
   background: #eaf5ff40;
@@ -217,6 +218,49 @@ h6 {
 
 .search-form button:hover {
   transform: scale(1.1);
+}
+
+#city-suggestions {
+  max-height: 210px;
+  overflow-y: auto;
+  position: absolute;
+  width: 100%;
+  background-color: #121365;
+  z-index: 10;
+  top: 52px;
+  left: 0;
+  padding: 0.4em 0.6em;
+  border-radius: 10px;
+  display: none;
+}
+
+.suggestion {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestion:hover {
+  background-color: #eaf5ff29;
+}
+
+/* Scrollbar width */
+#city-suggestions::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+}
+
+/* Track (the background of the scrollbar) */
+#city-suggestions::-webkit-scrollbar-track {
+  background: black; /* Color of the scrollbar track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+#city-suggestions::-webkit-scrollbar-thumb {
+  background-color: white; /* Color of the scrollbar handle */
+}
+
+/* Handle on hover */
+#city-suggestions::-webkit-scrollbar-thumb:hover {
+  background: black; /* Color of the scrollbar handle on hover */
 }
 
 /* The switch container */
