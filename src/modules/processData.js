@@ -1,4 +1,5 @@
 import { filterDayObject } from "./filterDayObject";
+import { format } from "date-fns";
 
 function processData(data) {
   const processedDataObject = {};
@@ -25,7 +26,8 @@ function displayController(data) {
     /\.(png|svg|jpg|jpeg|gif)$/i,
   );
 
-  const currentTime = new Date().toLocaleTimeString();
+  const currentTime = format(new Date(), "hh:mm a");
+  const currentDate = format(data.processedData[0].datetime, "dd/MM/yyyy");
 
   const weatherLocation = document.querySelector("#weatherLocation");
   const weatherDateTime = document.querySelector("#weatherDateTime");
@@ -43,7 +45,7 @@ function displayController(data) {
   const uvIndexValue = document.querySelector("#uvIndexValue");
 
   weatherLocation.innerText = data.resolvedAddress;
-  weatherDateTime.innerText = `${data.processedData[0].datetime} | ${currentTime}`;
+  weatherDateTime.innerText = `${currentDate} | ${currentTime}`;
   const iconPath = `./${data.icon}.svg`; // dynamically generate the file path
   currentIcon.src = icons(iconPath); // use the path to get the image URL
   currentTemperature.innerHTML = `${data.currentTemp}&deg;C`;
