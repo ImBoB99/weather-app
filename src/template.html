@@ -16,27 +16,29 @@
     <title>Weather App</title>
   </head>
   <body>
-    <!--
-    <input type="text" id="weather-search" name="weather-search" />
-    <button id="weather-search-button">Get Weather</button>
-    -->
     <div class="container">
+      <div class="search-container">
+        <div class="search-form">
+          <input id="weather-search" type="text" class="search-bar" placeholder="Enter City/Country" autocomplete="off">
+          <button id="weather-search-button" class="search-button"><i class="fa fa-search"></i></button>
+        </div>
+      </div>
       <div class="location-date-container">
-        <div class="weather-location">Zagreb, Hrvatska</div>
-        <div class="weather-date-time">Monday, 11 November 2024 | 21:10</div>
+        <div id="weatherLocation" class="weather-location"></div>
+        <div id="weatherDateTime" class="weather-date-time"></div>
       </div>
 
       <div class="weather-container">
         <div class="weather-current">
-          <img class="current-icon" src="/src/images/clear-night.svg" alt="" />
-          <div class="current-temperature">25&deg;C</div>
+          <img id="currentIcon" class="current-icon" src="/src/images/clear-night.svg" alt="" />
+          <div id="currentTemperature" class="current-temperature"></div>
         </div>
         <div class="weather-summary">
           <span class="summary-heading">Max Temp</span>
-          <div class="summary-value">25&deg;C</div>
+          <div id="maxTemperature" class="summary-value"></div>
           <span class="summary-heading">Min Temp</span>
-          <div class="summary-value">25&deg;C</div>
-          <div class="summary-feels-like">Feels like 25&deg;C</div>
+          <div id="minTemperature" class="summary-value"></div>
+          <div id="feelslikeTemperature" class="summary-feels-like"></div>
         </div>
       </div>
 
@@ -45,42 +47,42 @@
           <i class="fa-solid fa-sunrise weather-detail-icon"></i>
           <div class="weather-detail-values">
             <span class="weather-detail-heading">Sunrise</span>
-            <div class="weather-detail-value">06:33</div>
+            <div id="sunriseValue" class="weather-detail-value"></div>
           </div>
         </div>
         <div class="weather-detail-box">
           <i class="fa-solid fa-sunset weather-detail-icon"></i>
           <div class="weather-detail-values">
-            <span class="weather-detail-heading">Sundown</span>
-            <div class="weather-detail-value">19:33</div>
+            <span class="weather-detail-heading">Sunset</span>
+            <div id="sunsetValue" class="weather-detail-value"></div>
           </div>
         </div>
         <div class="weather-detail-box">
             <i class="fa-sharp fa-solid fa-umbrella weather-detail-icon"></i>
             <div class="weather-detail-values">
               <span class="weather-detail-heading">Chance of Rain</span>
-              <div class="weather-detail-value">3%</div>
+              <div  id="chanceOfRainValue"class="weather-detail-value"></div>
             </div>
         </div>
         <div class="weather-detail-box">
             <i class="fa-regular fa-droplet-percent weather-detail-icon"></i>
             <div class="weather-detail-values">
               <span class="weather-detail-heading">Humidity</span>
-              <div class="weather-detail-value">97%</div>
+              <div id="humidityValue" class="weather-detail-value"></div>
             </div>
         </div>
         <div class="weather-detail-box">
             <i class="fa-sharp fa-solid fa-wind weather-detail-icon"></i>
             <div class="weather-detail-values">
               <span class="weather-detail-heading">Wind</span>
-              <div class="weather-detail-value">97%</div>
+              <div id="windValue" class="weather-detail-value"></div>
             </div>
         </div>
         <div class="weather-detail-box">
             <i class="fa-solid fa-sun-bright weather-detail-icon"></i>
             <div class="weather-detail-values">
               <span class="weather-detail-heading">UV Index</span>
-              <div class="weather-detail-value">3</div>
+              <div id="uvIndexValue" class="weather-detail-value"></div>
             </div>
         </div>
       </div>
