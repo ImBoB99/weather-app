@@ -8,10 +8,6 @@ Welcome to my CSS, JavaScript, and HTML project, created as part of [The Odin Pr
 - [Overview](#overview)
 - [Features](#features)
 - [Technologies](#technologies)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
