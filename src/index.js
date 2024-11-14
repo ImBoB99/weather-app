@@ -1,12 +1,8 @@
 import "./styles.css";
+import "./modules/eventListeners.js";
 import { getData } from "./modules/getData.js";
 
-const weatherSearchButton = document.querySelector("#weather-search-button");
-const weatherSearchBox = document.querySelector("#weather-search");
-
-weatherSearchButton.addEventListener("click", getData);
-weatherSearchBox.addEventListener("keypress", function (event) {
-  if (event.key === "Enter") {
-    weatherSearchButton.click();
-  }
-});
+// initially display weather for London
+window.onload = () => {
+  getData("London"); // This will run after everything (DOM, CSS, JS, images, etc.) is loaded
+};
